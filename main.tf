@@ -20,8 +20,8 @@ provider "aws" {
 }
 
 resource "aws_security_group" "hextris-server" {
-    name = "hextris-sg"
-    description = "Allow HTTP and SSH access"
+    name = "hextris-server"
+    description = "Hextris HTTP and SSH access"
 
     ingress {
         from_port = 80
